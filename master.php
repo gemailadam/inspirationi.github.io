@@ -1,3 +1,9 @@
+<?php 
+/*
+*https://codex.wordpress.org/Theme_Development
+*
+*
+*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
