@@ -21,3 +21,16 @@
 * If you want to make quick style test / changes, consider using the Custom CSS section in appearance > customize > advanced options > Custom CSS, it will persist on update since it is saved in your database.
 * To make important CSS customizations, you'll want to use a child theme and add your css code in the style.css file of it.
 */
+ul ,li {padding:2px;margin:2px;list-style:none;}
+.cms-menu {}
+.cms-menu ul {}
+.cms-menu ul li {margin: 0;padding: 0; list-style: none;float: left;}
+.cms-menu ul li a {margin: 0;padding: 10px 20px;background-color:#444; ;text-decoration: none;box-shadow: 5px 5px 8px #222;}
+.cms-menu a:visited,.cms-menu a:link{color:#fff;font-size: 20px;}
+.cms-menu li a:hover {background-color:#666;font-size: 20px;color:beige;box-shadow: 2px 2px 4px #222;}
+/*.menu-item {float: left;list-style: none;}
+.menu-item a {padding: 5px 20px; background-color: #222;text-decoration: none;}
+*/
+.blogname h1 a {text-decoration: none;color: #333;text-shadow:5px 5px 8px #444;}
+#sidebar {background-color:beige;box-shadow: 0px 4px 8px;}
+.page .col-lg-9 {background-color:antiquewhite;box-shadow: 0px 4px 8px;}

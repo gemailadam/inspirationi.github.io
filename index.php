@@ -38,6 +38,8 @@ index.php
         <link rel="profile" href="http://gmpg.org/xfn/11" />
         <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
         <?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); ?>
+		<link rel="stylesheet"  type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" /> 
+		<!--link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/address-to-css-file.css" type="text/css" media="screen" /-->
         <?php wp_head(); ?>
 </head>
 <body>
