@@ -21,16 +21,112 @@
 * If you want to make quick style test / changes, consider using the Custom CSS section in appearance > customize > advanced options > Custom CSS, it will persist on update since it is saved in your database.
 * To make important CSS customizations, you'll want to use a child theme and add your css code in the style.css file of it.
 */
-ul ,li {padding:2px;margin:2px;list-style:none;}
+ul ,li ,a  {padding:2px;margin:2px;list-style:none;color:#fff;}
+.container {margin-top:40px;/*background-color:#F5F5ef;*/}
+footer {margin-top: 20px;}
+footer .col-lg-12 {padding:0;margin:0;}
+footer h5 {background-color: #222;color: #fff;margin: 0; padding-left: 50px;padding-top: 20px;padding-bottom: 20px;}
 .cms-menu {}
-.cms-menu ul {}
-.cms-menu ul li {margin: 0;padding: 0; list-style: none;float: left;}
-.cms-menu ul li a {margin: 0;padding: 10px 20px;background-color:#444; ;text-decoration: none;box-shadow: 5px 5px 8px #222;}
-.cms-menu a:visited,.cms-menu a:link{color:#fff;font-size: 20px;}
-.cms-menu li a:hover {background-color:#666;font-size: 20px;color:beige;box-shadow: 2px 2px 4px #222;}
-/*.menu-item {float: left;list-style: none;}
-.menu-item a {padding: 5px 20px; background-color: #222;text-decoration: none;}
+.cms-menu ul.menu { }
+.cms-menu .menu-depth-0 {position:relative;margin-top: 60px; margin-bottom: 20px;}
+.cms-menu .menu-depth-0 .menu-item-depth-0 {margin: 0;padding: 0; list-style: none;float: left;}
+
+.cms-menu .menu-depth-1 {margin:0;padding: 0; list-style: none;position:absolute;top:30px;z-index:1; }
+.cms-menu .menu-depth-1 .menu-item-depth-1 {margin:14px 0;padding:0;}
+
+.cms-menu .menu-depth-2 {position:absolute;left:90%;z-index:1;width:130%;}
+
+.cms-menu a {margin: 0;padding: 10px 20px;text-decoration: none;box-shadow: 0px 5px 8px #222;}
+.cms-menu a:visited,.cms-menu a:link{font-size: 20px;}
+.cms-menu a:hover {font-size: 20px;color:beige;box-shadow: 0px 2px 4px #222;}
+
+.topnav ul {float: right;}
+.topnav ul li {float: left; background-color:#333;margin: 0; padding: 0; color: #fff;text-decoration: none;}
+.topnav ul li a {text-decoration: none; color: #fff;background-color:#333; padding: 5px 10px;}
+.topnav ul li a:hover {background-color: #555;}
+.blogname h1 {display: inline;}
+
+.blogname h1 a {text-decoration: none;/*color:#2288BD;*/text-shadow:2px 2px 4px #999;}
+.blogname h2 {margin:10px 50px;text-shadow:2px 2px 4px #999;}
+
+.blogname h2:before {content:"~ ";}
+.blogname h2:after {content:" ,,";}
+#sidebar {padding:10px 10px; background-color:#222;box-shadow: 0px 4px 8px;margin-top: 10px;}
+#sidebar .widget { border-bottom: 5px solid #fff;}
+
+.page .col-lg-9 {background-color:#fff;box-shadow: 0px 4px 8px;}
+.slideshow { position: relative;}
+#img1,#img2,#img3,#img4,#img5,#img6,#img7,#img9 {position: absolute;width: 100%;}
+#img8 {position: relative;width: 100%;} 
+#img10 {width: 100%;height: 5px;margin:0;padding:0;}
+#img11 {width: 100%;height: 5px;margin:0;padding:0;}
+.rect {border-bottom: 5px solid #333;border-top: 5px solid #333;padding-top: 10px;}
+.rect a {color: #2288bb;text-decoration:underline;}
+
+.menunav {float: left;}
+.menunav ul {margin-top: 60px; margin-bottom: 20px; }
+.menunav li {margin: 0;padding: 0; list-style: none;float: left;}
+.menunav a {margin: 0;padding: 5px 10px;text-decoration: none;box-shadow: 0px 5px 8px #222;}
+.menunav a:visited,.menunav a:link{color:#444;}
+.menunav a:hover {background-color:#666;color:beige;box-shadow: 0px 2px 4px #222;}
+
+@media (max-width:700px){
+.cms-menu ul li a{ display: inline-block;}
+}  
+
+/*
+ul ,li ,a  {padding:2px;margin:2px;list-style:none;color:#fff;}
+.container {margin-top:40px;}
+footer {margin-top: 20px;}
+footer .col-lg-12 {padding:0;margin:0;}
+footer h5 {background-color: #222;color: #fff;margin: 0; padding-left: 50px;padding-top: 20px;padding-bottom: 20px;}
+.cms-menu {}
+
+.cms-menu .menu-depth-0 {position:relative;margin-top: 60px; margin-bottom: 20px;}
+.cms-menu .menu-depth-0 .menu-item-depth-0 {margin: 0;padding: 0; list-style: none;float: left;}
+
+.cms-menu .menu-depth-1 {margin:0;padding: 0; list-style: none;position:absolute;left:-9999px;z-index:1; }
+.cms-menu .menu-depth-0 .menu-link:hover > .menu-depth-1 {margin:0;padding: 0; list-style: none;position:absolute;top:30px;z-index:1; }
+.cms-menu .menu-depth-1 .menu-item-depth-1 {margin:14px 0;padding:0;}
+
+.cms-menu .menu-depth-2 {position:absolute;left:90%;z-index:1;width:130%;}
+
+.cms-menu a {margin: 0;padding: 10px 20px;text-decoration: none;box-shadow: 0px 5px 8px #222;}
+.cms-menu a:visited,.cms-menu a:link{font-size: 20px;}
+.cms-menu a:hover {font-size: 20px;color:beige;box-shadow: 0px 2px 4px #222;}
+
+.topnav ul {float: right;}
+.topnav ul li {float: left; background-color:#333;margin: 0; padding: 0; color: #fff;text-decoration: none;}
+.topnav ul li a {text-decoration: none; color: #fff;background-color:#333; padding: 5px 10px;}
+.topnav ul li a:hover {background-color: #555;}
+.blogname h1 {display: inline;}
+
+.blogname h1 a {text-decoration: none;text-shadow:2px 2px 4px #999;}
+.blogname h2 {margin:10px 50px;text-shadow:2px 2px 4px #999;}
+
+.blogname h2:before {content:"~ ";}
+.blogname h2:after {content:" ,,";}
+#sidebar {padding:10px 10px; background-color:#222;box-shadow: 0px 4px 8px;margin-top: 10px;}
+#sidebar .widget { border-bottom: 5px solid #fff;}
+
+.page .col-lg-9 {background-color:#fff;box-shadow: 0px 4px 8px;}
+.slideshow { position: relative;}
+#img1,#img2,#img3,#img4,#img5,#img6,#img7,#img9 {position: absolute;width: 100%;}
+#img8 {position: relative;width: 100%;} 
+#img10 {width: 100%;height: 5px;margin:0;padding:0;}
+#img11 {width: 100%;height: 5px;margin:0;padding:0;}
+.rect {border-bottom: 5px solid #333;border-top: 5px solid #333;padding-top: 10px;}
+.rect a {color: #2288bb;text-decoration:underline;}
+
+.menunav {float: left;}
+.menunav ul {margin-top: 60px; margin-bottom: 20px; }
+.menunav li {margin: 0;padding: 0; list-style: none;float: left;}
+.menunav a {margin: 0;padding: 5px 10px;text-decoration: none;box-shadow: 0px 5px 8px #222;}
+.menunav a:visited,.menunav a:link{color:#444;}
+.menunav a:hover {background-color:#666;color:beige;box-shadow: 0px 2px 4px #222;}
+
+@media (max-width:700px){
+.cms-menu ul li a{ display: inline-block;}
+}  
+
 */
-.blogname h1 a {text-decoration: none;color: #333;text-shadow:5px 5px 8px #444;}
-#sidebar {background-color:beige;box-shadow: 0px 4px 8px;}
-.page .col-lg-9 {background-color:antiquewhite;box-shadow: 0px 4px 8px;}

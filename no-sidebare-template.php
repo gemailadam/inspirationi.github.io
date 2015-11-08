@@ -1,11 +1,10 @@
-<?php 
-/*page.php
-   The page template. 
-   Used when an individual Page is queried. 
-*/
- ?>
-
-<!DOCTYPE html>
+<?php
+/*
+ * Template Name: Custom Full Width
+ * Description: Page template without sidebar
+ */
+?>
+ <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <?php get_template_part('head','1'); ?>
 <body <?php body_class( ); ?> >
@@ -23,7 +22,7 @@
 		<div class="row">
 			<!-- 2-1 ) page part -->
 			<div class="page">
-				<div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 					
 					<?php
 					if(have_posts()) : 
@@ -46,13 +45,8 @@
 
 				</div>
 		    </div>
-
 		    <!-- 2-2 ) sidebar part if you want -->
-			<div class="sidrbar">
-				<div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
-                	<?php get_sidebar(); ?>
-				</div>
-			</div>
+
 
 		</div>
 		<!--End Row -->
