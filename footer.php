@@ -37,6 +37,13 @@ wp_nav_menu( $defaults );
 		 ?>
 	</nav>
 </section>
+<section>
+	
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			<?php   dynamic_sidebar('footer1'); ?>
+		</div>
+	
+</section>
 <div style="clear:both;"></div>
 	<h5>&copy; copyright <?php  the_author();echo " - "; echo date('Y');?></h5>
 

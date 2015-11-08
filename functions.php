@@ -41,6 +41,10 @@ register_sidebars('2',$args );
 add_action('widgets_init','register_sidebars');
 */
 
+
+/////////////////////////////////////////////
+///////////// sidebare 1 ////////////////////
+/////////////////////////////////////////////
 $args = array('name' =>'Sidebar 1',
 	'id'=>'sidebar1' ,
 	'description'=> '',
@@ -54,6 +58,27 @@ register_sidebar($args );
 
 
 add_action('widgets_init','register_sidebar');
+
+
+///////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////
+///////////// Footer bare 1 ////////////////////
+////////////////////////////////////////////////
+function my_register_footer () {
+$args = array('name' =>'Footer 1',
+	'id'=>'footer1' ,
+	'description'=> 'footer one for your links',
+	'class'  => '',
+	'before_widget' => '<li id="%1$s" class="footer1widget %2$s">',
+	'after_widget'  => '</li>',
+	'before_title'  => '<h2 class="footer1widgettitle">',
+	'after_title'   => '</h2>' ); 
+
+register_sidebar($args );
+}
+
+add_action('widgets_init','my_register_footer');
 
 
 ///////////////////////////////////////////////////////////
@@ -379,6 +404,7 @@ add_action('wp_head','css_customizer' );
 
   <?php 
 /*Plugin*/
+/*
 function oscimp_admin_actions() {
     add_options_page("OSCommerce Product Display",
      "OSCommerce Product Display",
@@ -388,7 +414,8 @@ function oscimp_admin_actions() {
 }
  
 add_action('admin_menu', 'oscimp_admin_actions');
- ?>
+*/
+?>
 
 <?php /*
 function my_custom_admin_head() {
